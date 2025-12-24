@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palhoça Burguer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/palhocapng-removebg-preview.png">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/palhocapng.ico"Logo" style="height: 10vh; vertical-align: middle;">
+            Palhoça Burguer
+        </a> <a class="icon-barra">☰</a>
+        <nav>
+            <ul>
+                <a href="#inicio">Inicio</a></li>
+                <a href="#cardápio">Cardápio</a></li>
+                <a href="#sobre">Sobre</a></li>
+                <a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="hero-wrapper">
+        <article class="hero">
+            <div>
+                <h1>Os melhores hamburgueres de OZ!</h1>
+                <p>Ingredientes frescos, receitas especiais e uma equipe dedicada.</p>
+                <nav class="hero-buttons">
+                    <a id="#cardápio" class="btn">Ver cardápio</a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                        target="_blank" class="btn-outline">📱 WhatsApp</a>
+                </nav>
+                <ul class="hero-stats">
+                    <li>
+                        <strong>1000+</strong>
+                        Clientes atendidos
+                    </li>
+                    <li>
+                        <strong>4.7</strong>
+                        Avaliação⭐️
+                    </li>
+
+                </ul>
+            </div>
+            <img alt="Hamburguer" src="images/palhocapng.jpg" />
+        </article>
+    </section>
+    <section id="cardápio" class="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <p>Escolha seu pedido e adicione ao carrinho</p>
+
+        <ul class="menu-grid">
+            <li>
+                <img src="images/WhatsApp Image 2025-12-24 at 6.33.10 PM.jpeg" />
+                <span class="bedge">Mais vendido</span>
+                <h3>Cheese Burguer</h3>
+                <p>pão brioche, 180g de carne,queijo cheddar, alface, tomate e molho especial</p>
+                <strong>R$ 29,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+
+            <li>
+                <img src="images/WhatsApp Image 2025-12-24 at 6.34.35 PM.jpeg" />
+                <span class="bedge">Mais vendido</span>
+                <h3>Gorgo</h3>
+                <p>pão brioche,carne bovina,cheddar, alface, tomate e molho especial</p>
+                <strong>R$ 44,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+
+            <li>
+                <img
+                    src="https://images.unsplash.com/photo-1550317138-10000687a72b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhbWJ1cmd1ZXJ8ZW58MHx8MHx8fDA%3D" />
+                <span class="bedge">Mais vendido</span>
+                <h3>Buick Burguer</h3>
+                <p>pão brioche, 180g de carne bovina,alface, tomate,ovo e molho especial
+                </p>
+                <strong>R$ 31,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    target="_blank" class="btn">Pedir agora</a>
+            </li>
+            <li>
+                <img
+                    src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGFtYnVyZ3VlcmlhfGVufDB8fDB8fHww" />
+                <h3>Mustang</h3>
+                <p>pão brioche, 180g de carne,alface, tomate,ovo,picles e molho especial
+                </p>
+                <strong>R$ 31,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+            <li>
+                <img
+                    src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFtYnVyZ3VlcmlhfGVufDB8fDB8fHww" />
+                <h3>Nachos Burguer</h3>
+                <p>pão brioche,180g de carne bovina,alface, tomate e ovo
+                </p>
+                <strong>R$ 34,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+            <li>
+                <img
+                    src="https://images.unsplash.com/photo-1549611016-3a70d82b5040?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhhbWJ1cmd1ZXJpYXxlbnwwfHwwfHx8MA%3D%3D" />
+                <h3>Hamburguer da casa</h3>
+                <p>pão brioche, 180g de carne bovina,alface, tomate,ovo, molho,nuggets e cebola roxa
+                </p>
+                <strong>R$ 32,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+            <li>
+                <img
+                    src="https://media.istockphoto.com/id/2232322550/pt/foto/volcano-smash-burger-with-molten-cheddar-and-crispy-bacon.webp?a=1&b=1&s=612x612&w=0&k=20&c=f9mbVH9TFUyKrXs86FlK8g0FbRHcIhCW2DjIMn0QG9E=" />
+                <h3>Hamburguer x_bacon</h3>
+                <p>pão brioche, 180g de carne bovina,ovo,tomate,bacon e molho especial
+                </p>
+                <strong>R$ 34,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+            <li>
+                <img
+                    src="https://media.istockphoto.com/id/1879112733/pt/foto/delicious-double-cheeseburger-close-up-on-a-black-background-delicious-cheeseburger-sandwich.webp?a=1&b=1&s=612x612&w=0&k=20&c=OJhKrmNsUexk_TS9MdWx7hWMrg71CMm0jRm8m3uTSTE=" />
+                <h3>Hamburguer comum</h3>
+                <p>pão brioche, 180g de carne bovina,alface, tomate,queijo mussarela e molho especial
+                </p>
+                <strong>R$ 28,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+            <li>
+                <img
+                    src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhhbWJ1cmd1ZXJpYXxlbnwwfHwwfHx8MA%3D%3D" />
+                <h3>combo especial</h3>
+                <p>pão brioche, 180g de carne bovina,alface, tomate,ovo e molho e batata McCain
+                </p>
+                <strong>R$ 35,90</strong>
+                <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0"
+                    class="btn">Pedir agora</a>
+            </li>
+        </ul>
+    </section>
+    <article id="sobre" class="sobre">
+        <img alt="Hamburguer" class="=imagepalhoca" src="images/palhocapng.jpg" />
+        <div>
+            <h2>Nossa história</h2>
+            <p>
+Palhoça Burguer é uma hamburgueria localizada na cidade de Osasco e está passando por um momento de redesign.
+
+Atende no bairro Jardim Aliança e é uma empresa que procura entregar um produto de qualidade, com responsabilidade sanitária e com preocupação com a estética e a identidade.
+
+O trabalho de criação de identidade visual tem como objetivo expressar as características da marca a fim de torná-la comunicativa, assertiva com o público-alvo.
+
+O nome “Palhoça” significa cabana rústica tendo em vista a ideia de criar um espaço com decoração rústica.</p>
+        
+        </div>
+    </article>
+
+    <section id="cta" class="cta">
+        <h2>Bateu a Fome?</h2>
+        <p>Faça seu pedido agora e receba em casa</p>
+        <a href="https://api.whatsapp.com/send/?phone=5511980584309&text&type=phone_number&app_absent=0" target="_blank"
+            class="btn btn-ligth">📱 Whatsapp</a>
+    </section>
+
+    <footer class="contato">
+        <section>
+            <h4>Horário</h4>
+            <p> Loja aberta das 18h às 02h</p>
+        </section>
+        <section>
+            <h4>Contato</h4>
+            <p>📱(11) 98058-4309</p>
+            <p>📍 Av. Passaredo, 9b - Aliança</p>
+        </section>
+        <section>
+            <h4>Redes Sociais</h4>
+            <a href="https://www.instagram.com/palhocaburguer/">Instagram</a>
+        </section>
+        <p class="copy">© 2025 Palhoça Burguer.Todos os Direitos reservados</p>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+
+</html>

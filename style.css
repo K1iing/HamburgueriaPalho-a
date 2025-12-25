@@ -43,6 +43,18 @@ html {
   scroll-behavior: smooth;
 }
 
+
+footer.contato {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  justify-items: center;   /* centraliza os itens nas colunas */
+  align-items: center;     /* centraliza verticalmente */
+  text-align: center;
+  gap: 40px;
+
+  padding: 40px 20px;
+}
+
 .btn,
 .btn-outline {
   background: var(--primary-color);
@@ -227,6 +239,7 @@ header nav ul button:hover {
 .menu-grid li {
   position: relative;
   background: #fff;
+  margin-top: auto;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -278,9 +291,10 @@ li p {
 }
 
 .sobre {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  display: grid;
+  font-size: 25px;
   gap: 30px;
   padding: 60px 5%;
   background: var(--light);
@@ -316,19 +330,25 @@ li p {
   footer.contato {
     grid-template-columns: 1fr;
     text-align: center;
+    align-items: flex-end;
     gap: 50px;
+  }
+  .historydesc {
+    text-align: center;
+  }
+  .sobre {
+    grid-template-columns: none;
   }
 
   .sobre div {
     display: flex;
-    width: 30%;
+    width: 100%;
     flex-direction: column;
     position: static;    
   }
 
   .imagepalhoca {
-    height: 10% !important;
-    width: 10% !important;
+    display: none;
   }
 
   .menu-grid {
@@ -409,13 +429,16 @@ li p {
 }
 
 .sobre h2 {
-  font-size: 100px;
-  margin-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .sobre article {
   color: var(--gray);
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .sobre ul {
@@ -444,9 +467,9 @@ li p {
 
 footer {
   position: relative;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
+  display: grid;
   gap: 30px;
   padding: 60px 5% 10px;
   background: var(--dark);
